@@ -1,0 +1,30 @@
+<div class="side_bar">
+	<div id="user">
+		<a><img src="../img/user.svg" width="30%" id="user_icon"></a>
+		<h3><?php 
+			if ($usr) {
+				echo $usr;
+			}
+			else {
+				echo "Guest";
+			}
+		?></h3>
+		<p><?php 
+			if ($usr) {
+				echo "Adminitrastor";
+			}
+			else {
+				echo "Anonymous";
+			}
+		?></p>	
+	</div>
+	<ul class="side_menu">
+		<li><a href="index.php?tab=dashboard"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+		<li><a href="index.php?tab=profile"><i class="fa fa-user"></i>Profile</a></li>
+		<li><a href="index.php?tab=posts"><i class="fa fa-pencil-square"></i>Posts</a></li>
+		<li><a href="index.php?tab=photos"><i class="fa fa-picture-o"></i>Photos</a></li>
+		<li><a href="index.php?tab=categories"><i class="fa fa-tags"></i>Categories</a></li>
+		<li><a href="index.php?tab=setting"><i class="fa fa-cog"></i>Setting</a></li>
+		<li><a><i class="fa fa-sign-out"></i>Logout</a></li>
+	</ul>
+</div>
