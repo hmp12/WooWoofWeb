@@ -395,6 +395,55 @@ header {
 .block {
 	display: block;
 }
+input[type="checkbox"] {
+	height: 15px;
+	width: 15px;
+}
+.round_checkbox {
+	height: 20px;
+	width: 20px;
+	position: relative;
+}
+.round_checkbox input[type="checkbox"] {
+	height: 20px;
+	width: 20px;
+	z-index: 99;
+	opacity: 0;
+}
+
+.round_check {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	position: absolute;
+	cursor: pointer;
+	left: 0;
+	top: 0;
+}
+.round_check:after {
+	position: absolute;
+	border: 2px solid #fff;
+	border-top: none;
+	border-right: none;
+	content: "";
+	height: 6px;
+	width: 12px;
+	left: 3px;
+	top: 5px;
+	transform: rotate(-45deg);
+	opacity: 0;
+}
+input[type="checkbox"]:checked ~ .round_check {
+	background-color: #66bb6a;
+	border-color: #66bb6a;
+}
+
+input[type="checkbox"]:checked ~ .round_check:after {
+	opacity: 1;
+}
+
 
 /*login_out*/
 
@@ -605,7 +654,45 @@ header {
 	width: 30px;
 	border-radius: 5px;
 }
-
+.img_box {
+	height: auto;
+	width: auto;
+	display: inline-block;
+	position: relative;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.img_box input[type="checkbox"] {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 10px;
+	top: 10px;
+	z-index: 100;
+	opacity: 0;
+}
+.img_box input[type="checkbox"]:checked ~ .image {
+	filter: blur(2px);
+	transform: scale(1.1);
+}
+.img_box .round_check {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	z-index: 99;
+}
+.image {
+	height: 200px;
+	width: auto;
+	transition: 0.5s;
+}
+.image:hover {
+	transform: scale(1.2);
+}
+.clicked {
+	height: auto;
+	width: 80%;
+}
 
 /*bot*/
 

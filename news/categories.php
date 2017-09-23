@@ -8,7 +8,7 @@
 	<?php include '../html/3button.html';?>
 	<table class="table">
 		<tr>
-			<td><input type="checkbox"></td>
+			<td><input type="checkbox" id="all"></td>
 			<td><strong>ID</strong></td>
 			<td><strong>Label</strong></td>
 			<td><strong>Type</strong></td>

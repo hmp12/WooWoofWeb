@@ -47,9 +47,9 @@
 					<p>Hometown: Phú Thọ</p>
 					<p>Hobby: Coding, Anime, Manga, Detective Novel, Game</p>
 					<p>Studied at:</p>
-					<a href="http://chuyensp.edu.vn/" target="_blank" alt="HNUE High School for Gifted Students"><img src="img/csp.png" width="15%" /></a>
-					<a href="https://www.hust.edu.vn/" target="_blank"><img src="img/hust.png" alt="Hanoi University of Science and Technology" width="10%" /></a>
-					<a href="https://soict.hust.edu.vn/" target="_blank"><img src="img/soict.png" alt="School of Information and Communication Technology" width="10%" /></a>
+					<a href="http://chuyensp.edu.vn/" target="_blank" alt="HNUE High School for Gifted Students"><img src="../img/csp.png" width="15%" /></a>
+					<a href="https://www.hust.edu.vn/" target="_blank"><img src="../img/hust.png" alt="Hanoi University of Science and Technology" width="10%" /></a>
+					<a href="https://soict.hust.edu.vn/" target="_blank"><img src="../img/soict.png" alt="School of Information and Communication Technology" width="10%" /></a>
 					<p><br/></p>
 					<a href="https://is.hust.edu.vn/" target="_blank">Departmant of Information System</a>
 					<a href="html/tkb.html" target="_blank">TKB</a>
@@ -69,9 +69,9 @@
 			<div class="contact">
 				<p>I'm God of the new world!!!<br/>Contract me: </p>
 				<ul id="social">
-					<li><img src="img/facebook.png" width="17px" height="17px"/>
+					<li><img src="../img/facebook.png" width="17px" height="17px"/>
 						<a href="https://www.facebook.com/phong.hm.1">Facebook</a></li> 
-					<li><img src="img/gmail.png" width="20px" height="17px"/>
+					<li><img src="../img/gmail.png" width="20px" height="17px"/>
 						<a href="mailto:phongpt97@gmail.com">Gmail</a></li> 
 				</ul>
 				<strong> &copy <?php echo date("Y"); ?> HMP </strong>

@@ -47,9 +47,9 @@ $(document).ready(function() {
 	});
 
 
-	//categories
-	$('.table input[type="checkbox"]:eq(0)').change(function() {
-		$('.table input[type="checkbox"]').prop('checked',$(this).prop('checked'));
+	//news
+	$('input[type="checkbox"]:eq(0)').change(function() {
+		$('input[type="checkbox"]').prop('checked',$(this).prop('checked'));
 	});
 	$('#add').click(function() {
 		location.replace("index.php?tab=add_"+tab);
@@ -58,11 +58,11 @@ $(document).ready(function() {
 		location.reload();
 	});
 	$('#delete').click(function() {
-		$confirm = confirm("Are you sure to delete all selected categories?");
+		$confirm = confirm("Are you sure to delete all selected " + tab + "?");
 		if ($confirm) {
 			console.log("confirm");
 			var id = [];
-			$('table input[type="checkbox"]:checkbox:checked').each(function(i) {
+			$('input[type="checkbox"]:checkbox:checked').each(function(i) {
 				id[i] = $(this).val();
 			});
 			if (id.length == 0) {
@@ -74,7 +74,7 @@ $(document).ready(function() {
 		}
 	});
 	$('.sbutton.delete').click(function() {
-		$confirm = confirm("Are you sure to delete this categories?");
+		$confirm = confirm("Are you sure to delete this " + tab + "?");
 		if ($confirm) {
 			var id = [];
 			id[1] = $(this).val();
@@ -98,6 +98,25 @@ $(document).ready(function() {
 			}
 		});
 	}
+
+	$('#up_img').change(function() {
+		var length = $(this)[0].files.length;
+		var img, src;
+		for (var i=1; i<length; i++) {
+			console.log($(this)[0].files[i]);
+			src = URL.createObjectURL($(this)[0].files[i]);
+			img = "<img src='" + src + "' height='200px'>";
+			$('#pre_img').after(img);
+		}
+		src = URL.createObjectURL($(this)[0].files[0]);
+		$('#pre_img').attr("src", src);
+	});
+	$('.image').click(function() {
+		$('.image').not(this).removeClass("clicked");
+		$(this).toggleClass("clicked");
+
+	});
+
 });
 
 

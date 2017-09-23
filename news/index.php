@@ -24,27 +24,7 @@
 							    var tab = "'.$tab.'";
 							</script>
 						';
-						if ($tab == "dashboard") {
-							include 'dashboard.php';
-						}
-						else if ($tab == "profile") {
-							include 'profile.php';
-						}
-						else if ($tab == "posts") {
-							include 'posts.php';
-						}
-						else if ($tab == "photos") {
-							include 'photos.php';
-						}
-						else if ($tab == "categories") {
-							include 'categories.php';
-						}
-						else if ($tab == "add_categories") {
-							include 'add_categories.php';
-						}
-						else if ($tab == "setting") {
-							include 'setting.php';
-						}
+						include $tab.'.php';
 					}
 					else echo '<h1>Flanierte sudwesten tur ernstlich ers das stuckchen sorglosen. Man sag gegriffen zuschauen kraftiger sorglosen leuchtete ins was. Lohgruben gut zuschauen was liebevoll. Lebhaft stopfen wie hab schnell wandern bessern. Dahinging kam gestorben schleiche kraftiger vor. Zu burschen da vornamen spielend gespielt es fu. Nachdem breiten wie dunklen alt besorgt eia her. Halblaut unbeirrt hob blattern neunzehn see vor ten gesprach schlafer. 
 
