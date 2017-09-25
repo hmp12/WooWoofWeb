@@ -72,6 +72,7 @@
 
 <div class="add_categories">
 	<h1>Add Photos</h1>
+	<button class="button" id="back">Back</button>
 	<div class="preview">
 		<img src="../img/default.png" height="200px" id="pre_img">
 	</div>

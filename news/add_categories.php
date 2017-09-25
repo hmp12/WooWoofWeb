@@ -56,17 +56,22 @@
 			$sql = "INSERT INTO categories (label, url, type, sort, parent_id)
 			VALUE ('$label', '$url', '$type', '$sort', '$parent')";
 			$db->query($sql);
-			echo "Add categories success"
-		} 
-		echo $db->error();
+			if ($db->error()) {
+				echo $db->error();
+			}
+			else {
+				echo "Add categories success";
+			}	
+		}
 		$db->close();
 	}
 		
 ?>
 
 <div class="add_categories">
+	<h1>Add Categories</h1>
+	<button class="button" id="back">Back</button>
 	<form action="#" method="post">
-		<h1>Add Categories</h1>
 		<p>Label <span class="error"><?php echo $labelErr;?></span></p>
 		<input type="text" value="<?php echo $label;?>" name="label" class="text">
 		<p>Url <span class="error"><?php echo $urlErr;?></span></p>

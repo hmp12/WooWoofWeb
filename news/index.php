@@ -13,8 +13,7 @@
 			<?php include '../html/side_bar.html';?>
 			<div class="content">
 				<script type="text/javascript">
-				    var tag = "";
-				    
+				    var tag = "";  
 				</script>
 				<?php 
 					if (isset($_GET['tab'])) {

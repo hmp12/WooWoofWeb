@@ -51,6 +51,9 @@ $(document).ready(function() {
 	$('input[type="checkbox"]:eq(0)').change(function() {
 		$('input[type="checkbox"]').prop('checked',$(this).prop('checked'));
 	});
+	$('#back').click(function() {
+		location.replace("index.php?tab=" + tab.substr(4));
+	});
 	$('#add').click(function() {
 		location.replace("index.php?tab=add_"+tab);
 	});
@@ -103,7 +106,6 @@ $(document).ready(function() {
 		var length = $(this)[0].files.length;
 		var img, src;
 		for (var i=1; i<length; i++) {
-			console.log($(this)[0].files[i]);
 			src = URL.createObjectURL($(this)[0].files[i]);
 			img = "<img src='" + src + "' height='200px'>";
 			$('#pre_img').after(img);
@@ -121,7 +123,6 @@ $(document).ready(function() {
 
 
 function logged_in() {
-	//	document.getElementById("name").innerHTML = "Hello " + t;
 	document.getElementById("welcome").style.display = "block";
 	document.getElementById("hello_bt").style.display = "none";	
 	document.getElementById("login_out").innerHTML = "Logout";

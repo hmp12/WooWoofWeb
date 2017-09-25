@@ -1,5 +1,5 @@
 <?php
-	$tab = "Photos";
+	$tab = "photos";
 	include 'delete.php';
 ?>
 

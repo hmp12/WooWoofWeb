@@ -1,0 +1,8 @@
+2 4 6 D3-5-501 SSH1050 Tư tưởng HCM
+2 11 12 TC-408 IT4409 Công nghệ Web
+3 4 6 TC-411 IT3100 Lập trình OOP
+4 3 3 NTD PE2026 Cầu Lông II
+4 7 8 TC-408 IT4490 Công nghệ Web
+5 1 3 TC-410 IT4080 Nhập môn CNPM
+5 4 6 TC-410 IT3120 Phân tích thiết kế HTTT
+5 10 12 TC-408 IT4361 Hệ cơ sở tri thức

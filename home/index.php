@@ -52,7 +52,7 @@
 					<a href="https://soict.hust.edu.vn/" target="_blank"><img src="../img/soict.png" alt="School of Information and Communication Technology" width="10%" /></a>
 					<p><br/></p>
 					<a href="https://is.hust.edu.vn/" target="_blank">Departmant of Information System</a>
-					<a href="html/tkb.html" target="_blank">TKB</a>
+					<a href="tkb.php" target="_blank">TKB</a>
 				</div>
 			</div>
 			<div id="time">
