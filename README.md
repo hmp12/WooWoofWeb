@@ -1,7 +1,7 @@
 # WoofWoofWeb
 
 # Demo:
-https://woowoof.000webhostapp.com/
+https://www.gaugau.tk/
 
 # Database config:
 /php/database.php
