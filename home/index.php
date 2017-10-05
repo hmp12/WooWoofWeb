@@ -10,6 +10,7 @@
 <html>
 
 	<head>
+		<title>Gâu Gâu</title>
 		<?php include '../html/head.html';?>
 	</head>
 	
@@ -30,14 +31,14 @@
 			<div class="parallax" id="hello">
 				
 				<h1>Hello <?php if ($logged_in) {echo $_SESSION["usr"];} else echo "There!!!";?></h1>
-				<p id="welcome">Welcome to my site <3</p>
-				<button id="hello_bt" onclick="location.href='account/login_out.php'"><span>What is your name?</span></button>
+				<p id="welcome">Welcome to my site </p>
+				<button id="hello_bt" onclick="location.href='../account/login_out.php'"><span>What is your name?</span></button>
 				<?php
 					if ($logged_in) echo "<script> logged_in(); </script>";
 				?>
 			</div>
 			<div id="about_me">
-				<h1>Who am I?</h1>
+				<h1><strong>Who am I?</strong></h1>
 				<div id="me">
 					<img src="../img/question.svg" width="100%" height="100%" id="qmark">
 					<img src="../img/me.jpg" width="100%" height="100%" id="me_picture">
@@ -55,7 +56,7 @@
 					<a href="tkb.php" target="_blank">TKB</a>
 				</div>
 			</div>
-			<div id="time">
+			<div class="parallax" id="time">
 				<h1 id="time_value0"></h1>
 				<h1 id="time_value1"></h1>
 				<h1 id="time_value2"><strong></strong></h1>
@@ -74,7 +75,7 @@
 					<li><img src="../img/gmail.png" width="20px" height="17px"/>
 						<a href="mailto:phongpt97@gmail.com">Gmail</a></li> 
 				</ul>
-				<strong> &copy <?php echo date("Y"); ?> HMP </strong>
+				<strong> &copy; <?php echo date("Y"); ?> HMP </strong>
 			</div>
 		</div>	
 	</body>

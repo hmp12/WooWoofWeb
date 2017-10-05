@@ -67,7 +67,6 @@
 			<form action="acc_finish.php" method="post" id="auto_submit">
 				<input type="hide" name="action" value="<?php if ($logged_in) echo "logout"; else echo "login";?>">
 				<input type="hide" name="usr" value="<?php echo $usr;?>">
-				<input type="hide" name="pass" value="<?php echo $pass;?>">
 				<input type="submit">
 			</form>	
 			<?php

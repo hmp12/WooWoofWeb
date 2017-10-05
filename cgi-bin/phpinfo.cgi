@@ -1,4 +1,4 @@
-#!"D:/Ampps/php/php-cgi.exe" -q
+#!"D:/Ampps/php/php-cgi.exe"
 <?php
-phpinfo();
+	phpinfo();
 ?>

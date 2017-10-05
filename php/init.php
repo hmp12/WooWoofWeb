@@ -2,7 +2,7 @@
 	include '../php/session.php';
 	$session = new Session();
 	$session->start();
-	$usr = $session->get();
+	$user = $session->get();
 
 	include '../php/database.php';
 	$db = new Database();
